@@ -6,8 +6,9 @@ namespace :dev do
       show_spinner("Criando banco") { %x(rails db:create) }
       show_spinner("Migrando banco") { %x(rails db:migrate) }
       show_spinner("Semeando banco") { %x(rails db:seed) }
-      %x{rails dev:add_coins}
       %x{rails dev:add_m_types}
+      %x{rails dev:add_coins}
+      
     else
       puts "Você não está em ambiente de desenvolvimento"
     end
@@ -54,20 +55,24 @@ namespace :dev do
           description: "Dogecoin",
           acronym: "DOGE",
           url_image: "https://i.ibb.co/sgb17NS/pngwing-com.png",
+          mining_type: MiningType.all.sample
         },
         {
           description: "Bitcoin",
           acronym: "BTC",
           url_image: "https://upload.wikimedia.org/wikipedia/commons/5/50/Bitcoin.png",
+          mining_type: MiningType.find_by(acronym: "PoW")
         },
         {
           description: "ETHEREUM",
           acronym: "ETH",
           url_image: "https://s2.coinmarketcap.com/static/img/coins/200x200/131.png",
+          mining_type: MiningType.all.sample
         },
       ]
 
       coins.each do |coin|
+        print('Coin:', coin.inspect)
         Coin.find_or_create_by!(coin)
       end
     end
