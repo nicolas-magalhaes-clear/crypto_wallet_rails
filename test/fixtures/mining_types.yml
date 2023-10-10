@@ -3,9 +3,7 @@
 one:
   description: MyString
   acronym: MyString
-  string: MyString
 
 two:
   description: MyString
   acronym: MyString
-  string: MyString
