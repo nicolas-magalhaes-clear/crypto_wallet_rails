@@ -9,7 +9,7 @@ gem "rails", "~> 7.1.0"
 gem "sprockets-rails"
 
 gem "pry-rails" 
-
+gem "tty-spinner"
 # Use sqlite3 as the database for Active Record
 gem "sqlite3", "~> 1.4"
 
