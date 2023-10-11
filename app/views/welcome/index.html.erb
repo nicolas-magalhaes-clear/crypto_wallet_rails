@@ -1,18 +1,19 @@
-<h1>Seja bem vindo!</h1>
-<p><strong>Data</strong> <%= data_br(Date.today) %></p>
+<h1><%= t('welcome') %></h1>
+<p> <%= "#{t('applocale' )} #{t('locale')}" %>  </p>
+<p><strong>Data</strong> <%= l(Date.today) %></p>
+
+<p> <%=  link_to t('port'), '?locale=pt-BR'  %></p>
+<p> <%=  link_to t('ing'), '?locale=en' %>  </p>
+
+<p><%= session[:curso] %></p>
 
 <%= nome_aplicacao %>
 
-<%= render 'menu' %>
+<%= render "menu" %>
 
 
-<p>
-  Você está num ambiente de <strong><%= ambiente_rails %></strong>
-</p>
 
 <p>
-  <%= @nome%>
+  <%= t('youareon') %> <strong><%= ambiente_rails() %></strong>
 </p>
-<p>
-Meu curso de <%= @curso %>
-</p>
+

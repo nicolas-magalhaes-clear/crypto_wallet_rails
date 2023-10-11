@@ -1,16 +1,16 @@
 <div id="<%= dom_id coin %>">
   <p>
-    <strong>Descrição:</strong>
+    <strong><%= t('desc') %></strong>
     <%= coin.description %>
   </p>
 
   <p>
-    <strong>Acronimo:</strong>
+    <strong><%= t('acronym') %>:</strong>
     <%= coin.acronym %>
   </p>
 
   <p>
-    <strong>Imagem:</strong>
+    <strong><%= t('image') %>:</strong>
     <img src="<%= coin.url_image %>" width="50px"/>
   </p>
 
