@@ -28,4 +28,29 @@
 #       enabled: "ON"
 
 en:
-  hello: "Hello world"
+  locale: 'English'
+  welcome: 'Welcome!'
+  port: 'Portuguese'
+  ing: 'English'
+  abc: 'KKKKKK'
+  desc: 'Description'
+  acronym: 'Acronym'
+  image: 'Image'
+  seecoin: 'Inspect'
+  newcoin: 'New coin'
+  edit: 'Edit'
+  back: 'Back'
+  delete: 'Delete'
+  editing_h1: 'Editing coin'
+  url_image: 'Image url'
+  backcoin: 'Back to coins'
+  coinregister: 'Coin register'
+  mining_type: 'Mining type'
+  mining_types: 'Mining types'
+  updatecoin: 'Update coin'
+  applocale: 'Our app language is: '
+  youareon: 'You are on environment'
+  dev: 'development'
+  prod: 'production'
+  test: 'test'
+

@@ -1,0 +1,28 @@
+pt-BR:
+  locale: 'Portugues do Brasil'
+  welcome: 'Seja bem vindo!'
+  port: 'Português'
+  ing: 'Inglês'
+  date:
+    formats: 
+      default: "%d/%m/%Y"
+  desc: 'Descrição'
+  acronym: 'Sigla'
+  image: 'Imagem'
+  seecoin: 'Inspecionar moeda'
+  newcoin: 'Criar nova moeda'
+  edit: 'Editar'
+  back: 'Voltar'
+  delete: 'Deletar'
+  editing_h1: 'Editando Moeda'
+  url_image: 'Url da imagem'
+  backcoin: 'Voltar a todas moedas'
+  coinregister: 'Cadastro de moedas'
+  mining_type: 'Tipo de mineração'
+  mining_types: 'Tipos de mineração'
+  updatecoin: 'Atualizar moeda'
+  applocale: 'Nossa aplicação está configurada para o idioma: '
+  youareon: 'Você está num ambiente'
+  dev: 'desenvolvimento'
+  prod: 'produção'
+  test: 'teste'
