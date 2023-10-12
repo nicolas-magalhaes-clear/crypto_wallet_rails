@@ -1,19 +1,15 @@
-<h1><%= t('welcome') %></h1>
-<p> <%= "#{t('applocale' )} #{t('locale')}" %>  </p>
-<p><strong>Data</strong> <%= l(Date.today) %></p>
-
-<p> <%=  link_to t('port'), '?locale=pt-BR'  %></p>
-<p> <%=  link_to t('ing'), '?locale=en' %>  </p>
-
-<p><%= session[:curso] %></p>
-
-<%= nome_aplicacao %>
-
-<%= render "menu" %>
-
-
-
-<p>
-  <%= t('youareon') %> <strong><%= ambiente_rails() %></strong>
-</p>
-
+  
+<header class="d-flex w-100  justify-content-end gap-2 align-items-center pe-2" style="height: 30px;">
+<p class="m-0 p-0"> <%=  link_to t('port'), '?locale=pt-BR', class: "text-decoration-none" %></p>
+<p class="m-0 p-0"> <%=  link_to t('ing'), '?locale=en', class: "text-decoration-none"  %>  </p>
+</header>
+<div class="bg-secondary m-3 p-3 rounded" style="--bs-bg-opacity: .5;"->
+  <h1 class=""><%= t('welcome') %></h1>
+  <p><%=  t('presentation') %></p>
+  <hr/>
+  <p><%= t('welcomeoptions') %></p>
+  <%= render "menu" %>
+  <p class="mt-2">
+    <%= t('youareon') %> <strong class="text-danger"><%= ambiente_rails() %></strong>
+  </p>
+</div>

@@ -2,7 +2,6 @@
   <% if coin.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(coin.errors.count, "error") %> prohibited this coin from being saved:</h2>
-
       <ul>
         <% coin.errors.each do |error| %>
           <li><%= error.full_message %></li>
@@ -10,29 +9,25 @@
       </ul>
     </div>
   <% end %>
-
-  <div>
-    <%= form.label t('desc'), style: "display: block" %>
-    <%= form.text_field :description %>
-  </div>
-
-  <div>
-    <%= form.label t('acronym'), style: "display: block" %>
-    <%= form.text_field :acronym %>
-  </div>
-
-  <div>
-    
-    <%= form.label t('url_image'), style: "display: block" %>
-    <%= form.text_field :url_image %>
-  </div>
-
-  <div>
-     <%= form.label t('mining_type'), style: "display: block" %>
-    <%=  form.select('mining_type_id', @mining_type_options , {include_blank: true}) %>
-  </div>
-
-  <div>
-    <%= form.submit alt="#{t('updatecoin')}" %>
+  <div class="p-2">
+    <div>
+      <%= form.label t('desc'), style: "display: block" %>
+      <%= form.text_field :description %>
+    </div>
+    <div>
+      <%= form.label t('acronym'), style: "display: block" %>
+      <%= form.text_field :acronym %>
+    </div>
+    <div>
+      <%= form.label t('url_image'), style: "display: block" %>
+      <%= form.text_field :url_image %>
+    </div>
+    <div>
+      <%= form.label t('mining_type'), style: "display: block" %>
+      <%=  form.select('mining_type_id', @mining_type_options , {include_blank: true}) %>
+    </div>
+    <div>
+      <%= form.submit alt="#{t('updatecoin')}", class: 'btn btn-warning mt-2' %>
+    </div>
   </div>
 <% end %>

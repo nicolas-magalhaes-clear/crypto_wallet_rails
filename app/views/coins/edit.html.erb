@@ -1,10 +1,10 @@
-<h1><%= t('editing_h1') %></h1>
+<h1 class="m-2"><%= t('editing_h1') %></h1>
 
 <%= render "form", coin: @coin %>
 
 <br>
 
 <div>
-  <%= link_to t('seecoin'), @coin %> |
-  <%= link_to t('backcoin'), coins_path %>
+  <%= link_to t('seecoin'), @coin, class: "btn btn-primary" %>
+  <%= link_to t('backcoin'), coins_path, class: 'btn btn-info' %>
 </div>

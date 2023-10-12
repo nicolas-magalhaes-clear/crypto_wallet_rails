@@ -1,10 +1,5 @@
-<ul>
-    
-  <li>
-    <%= link_to t('coinregister'), "/coins"%>
-  </li>
-  <li>
-    <%= link_to t('mining_types'), "mining_types" %>
-  </li> 
-  
-</ul>
+
+<div class="d-flex gap-2">
+    <%= link_to t('coinregister'), "/coins", class: "btn btn-primary"%>
+    <%= link_to t('mining_types'), "mining_types", class: "btn btn-primary" %>
+</div>
