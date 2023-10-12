@@ -8,7 +8,8 @@ gem "rails", "~> 7.1.0"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
-gem 'sassc-rails'
+gem 'sass-rails'
+
 
 gem "pry-rails" 
 gem "tty-spinner"
