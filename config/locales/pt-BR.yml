@@ -1,8 +1,16 @@
 pt-BR:
+  new: 'Nova'
+  coin: "Moeda"
+  mining_types_page: "Tipos de mineração"
   locale: 'Portugues do Brasil'
   welcome: 'Seja bem vindo!'
   port: 'Português'
   ing: 'Inglês'
+  welcomeoptions: 'Para iniciar selecione uma opção!'
+  presentation: "Este é o Crypto Wallet, um app para você se cadastrar e acompanhar as suas criptomoedas!"
+  show: 'Mostrar'
+  edit: 'Editar'
+  welcomepage: 'Início'
   date:
     formats: 
       default: "%d/%m/%Y"
@@ -11,7 +19,7 @@ pt-BR:
   image: 'Imagem'
   seecoin: 'Inspecionar moeda'
   newcoin: 'Criar nova moeda'
-  edit: 'Editar'
+  updatemtype: 'Atualizar'
   back: 'Voltar'
   delete: 'Deletar'
   editing_h1: 'Editando Moeda'
@@ -25,4 +33,7 @@ pt-BR:
   youareon: 'Você está num ambiente'
   dev: 'desenvolvimento'
   prod: 'produção'
+  coins: 'Moedas'
+  remove: 'Remover'
+  newminingtype: 'Criar novo tipo'
   test: 'teste'

@@ -28,9 +28,15 @@
 #       enabled: "ON"
 
 en:
+  new: "New"
+  mining_types_page: "Mining Types"
+  coin: "coin"
   locale: 'English'
   welcome: 'Welcome!'
+  welcomepage: 'Home'
   port: 'Portuguese'
+  welcomeoptions: 'To start select an option!'
+  presentation: "This is Crypto Wallet, an app that allows you to create and register your cript coins!"
   ing: 'English'
   abc: 'KKKKKK'
   desc: 'Description'
